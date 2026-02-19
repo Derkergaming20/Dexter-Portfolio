@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style1.css">
+    <title>Dexter Portfolio</title>
+    <script src="https://kit.fontawesome.com/feb118aecb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!---Ribbon Start--->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"><span>Dex</span>ter</a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+    <!---Quick summary about me--->        
+            <div class="header-text">
+                <h3>Web Developer <span>& Designer</span></h3>
+                <h1>Hi! I'm <span>Dexter Paul</span>,</h1>
+                <h2>I am the <span>Web Developer</span> that your looking for.</h2>
+            </div>
+        </div>
+    </div>
+    <!---About section Start--->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/img/front.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am a Front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animation. A responsive design makes your website accessible to all users, regardless of their device.</p>
+                    <!---Skills section--->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI Design</span><br>Web Designing</li>
+                            <li><span>Web Development</span><br>Web template design</li>
+                        </ul>
+                    </div>
+                    <!---Experiences section--->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <!---change-into-something--->
+                            <li><span>2023 - Current</span><br>Hardware and Software Technician at <span>CITE</span></li>
+                            <li><span>2022 - 2023</span><br>Web Development at <span>Marigondon NHS</span></li>
+                        </ul>
+                    </div>
+                    <!---Education section--->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <!---change-into-something--->
+                            <li><span>2023 - Current</span><br>Computer Engineering at <span>Center for Industrial Technology and Enterprise</span></li>
+                            <li><span>2023 - 2024</span><br>Microsoft Youth Ambassador 2.0</li>
+                            <li><span>2021 - 2023</span><br>Computer System and Servicing at <span>Marigondon National High School</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Services section start---> <!---Need to be edit--->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>As a web developer, I am ensuring that the websites I create are user-friendly, visually appealing, and meet the specific requirements of my clients or users.</p>
+                    <a href="#contact">Let's Talk</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI Design</h2>
+                    <p>As a UI designer, is to create beautiful, functional, and user-friendly interfaces that make the product a pleasure to use.</p>
+                    <a href="#contact">Let's Talk</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-box"></i>
+                    <h2>Custom Package</h2>
+                    <p>As a UI Designer and Web Developer, I am ensuring that the UI Design is being created beautifully and the Websites I create are user-friendly, visually appealing, and meet the specific requirements of my clients or users.</p>
+                    <a href="#contact">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---Portfolio---skipped on progress--->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./assets/img/lawyer.png">
+                    <div class="layer">
+                        <h3>Lawyers Website</h3>
+                        <p>A website that can visit your future clients to be your lawyer.</p>
+                        <a href="https://derkergaming20.github.io/Lawyer-Website-Sample/">Live Demo</a>
+                        <a href="#contact">Learn More</a>
+                    </div>
+                </div>
+<!---unknown-need-edit--->
+                <div class="work">
+                    <img src="">
+                    <div class="layer">
+                        <h3>Turon Website</h3>
+                        <p>A website that can visit your customers to place order and for reservation.</p>
+                        <a href="https://derkergaming20.github.io/Delicioso-Turon-Pares/">Live Demo</a>
+                        <a href="#contact">Learn More</a>
+                    </div>
+                </div>
+<!---unknown-need-edit--->
+                <div class="work">
+                    <img src="">
+                    <div class="layer">
+                        <h3></h3>
+                        <p></p>
+                        <a href="#">Live Demo</a>
+                        <a href="#contact">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Derkergaming20" class="btn">See More</a>
+        </div>
+    </div>
+<!---Contact--->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>paulmedia58@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>09662488576</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/DexterTingal24/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://discord.com/users/614045824074383370"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://github.com/Derkergaming20"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.freecodecamp.org/Dexterpaul"><i class="fa-brands fa-free-code-camp"></i></a>
+                    </div>
+                    <div class="social-names">
+                        <p class="fb">Facebook</p>
+                        <p class="ig">Instagram</p>
+                        <p class="dc">Discord</p>
+                        <p class="gh">Github</p>
+                        <p class="fcc">FreeCodecamp</p>
+                    </div>
+                    <div class="icon">
+                        <a href="https://docs.google.com/spreadsheets/d/1FTuPyg91WjFr3ePgUARr6JUMOmQHtd48L5srzm5syl0/edit?fbclid=IwY2xjawLka9VleHRuA2FlbQIxMABicmlkETA4Y2NtRmNCR2lrVHRqbVFuAR5uIKsZFzgCk_gTEonm72s2U8B3DtD6XJ4zpte1a2H87HFy4HS5YUtWdw72Tw_aem_iSdR8RFexBpMruMSldXiEw&pli=1&gid=543886758#gid=543886758"><i class="fa-solid fa-calendar-days"></i></a>
+                    </div>
+                    <div class="attendance">
+                        <p>Daily Attendance Sheet</p>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Dexter. Made <i class="fa-solid fa-heart"></i> by Dexter Paul Tingal</p>
+        </div>
+    </div>
+
+
+<!---javascript for normal website--->
+<script src="./assets/js/desktop-script.js"></script>
+
+<!---javascript for cp website--->
+<script src="./assets/js/cellphone-script.js"></script>
+
+<!---script for contact--->
+  <script src="./assets/js/contact-script.js"></script>
+
+</body>
+</html>
