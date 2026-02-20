@@ -29,7 +29,7 @@ body{
 
 nav{
     align-items: center;
-    background: #080808;
+    background: rgba(255, 0, 79, 0.4);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -39,6 +39,10 @@ nav{
     top: 0;
     width: 100%;
     z-index: 1000;
+}
+
+nav.hide-nav{
+    transform: translateY(-100%);
 }
 
 nav .fas {
@@ -85,7 +89,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-/*---small about me start---*/
+/*---quick summary about me start---*/
 .header-text{
     font-size: 30px;
     margin-top: 20%;
@@ -100,10 +104,10 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 
-.header-text h2{
+/*.header-text h2{
     font-size: 35px;
     margin-top: 15px;
-}
+}*/
 
 .header-text h2 span{
     color: #ff004f;
@@ -116,6 +120,41 @@ nav ul li a:hover::after{
 
 .header-text h3 span{
     color: #ff004f;
+}
+
+.header-text ol{
+    list-style: none;
+    overflow: hidden;
+    --height: 3.8rem;
+    height: var(--height);
+    line-height: var(--height);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.header-text ol li span{
+    font-weight: 600;
+    border-right: .4rem solid #fff;
+    animation: cursor .8s step-end infinite
+                typing 3s steps(18) infinite alternate;
+    display: inline-block;
+    width: 0;
+}
+
+@keyframes cursor{
+    50% { 
+        border-color: transparent; 
+    }
+}
+
+@keyframes typing {
+    0%, 33%{
+        width: 0%;
+    }
+    70%, 100%{
+        width: 100%;
+    }
 }
 
 /*---about section start---*/
