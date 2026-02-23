@@ -104,11 +104,6 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 
-/*.header-text h2{
-    font-size: 35px;
-    margin-top: 15px;
-}*/
-
 .header-text h2 span{
     color: #ff004f;
 }
@@ -122,39 +117,72 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 
-.header-text ol{
-    list-style: none;
-    overflow: hidden;
-    --height: 3.8rem;
-    height: var(--height);
-    line-height: var(--height);
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-}
+/* ---- Fake Typing Effect ---- */
 
-.header-text ol li span{
-    font-weight: 600;
-    border-right: .4rem solid #fff;
-    animation: cursor .8s step-end infinite
-                typing 3s steps(18) infinite alternate;
+.typing-wrapper{
+    position: relative;
     display: inline-block;
+    height: 45px;
+    margin-top: 15px;
+}
+
+.typing-word{
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
     width: 0;
+    opacity: 0;
+    font-size: 60px;
+    font-weight: 600;
+    color: #ff004f;
+    border-right: 3px solid #ff004f;
 }
 
-@keyframes cursor{
-    50% { 
-        border-color: transparent; 
-    }
+/* Cursor Blink */
+@keyframes blink{
+    50% { border-color: transparent; }
 }
 
-@keyframes typing {
-    0%, 33%{
-        width: 0%;
-    }
-    70%, 100%{
-        width: 100%;
-    }
+.typing-word{
+    animation: blink 0.8s infinite;
+}
+
+/* Animation Timing (15 seconds total loop) */
+
+.word1{
+    animation: typing1 15s infinite, blink 1s infinite;
+}
+.word2{
+    animation: typing2 15s infinite, blink 1s infinite;
+}
+.word3{
+    animation: typing3 15s infinite, blink 1s infinite;
+}
+
+@keyframes typing1{
+    0% { width:0; opacity:1; }
+    8% { width:13ch; }
+    18% { width:13ch; }
+    23% { width:0; }
+    100% { width:0; opacity:0; }
+}
+
+@keyframes typing2{
+    25% { width:0; opacity:1; }
+    33% { width:12ch; }
+    43% { width:12ch; }
+    48% { width:0; }
+    100% { width:0; opacity:0; }
+}
+
+@keyframes typing3{
+    50% { width:0; opacity:1; }
+    58% { width:11ch; }
+    68% { width:11ch; }
+    73% { width:0; }
+    100% { width:0; opacity:0; }
 }
 
 /*---about section start---*/
