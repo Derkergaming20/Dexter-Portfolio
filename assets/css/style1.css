@@ -16,7 +16,7 @@ body{
 
 /*---Ribbon Start style---*/
 #header{
-    background-image: url(/assets/img/side.jpg);
+    background-image: url(./assets/img/side.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
